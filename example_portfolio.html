@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+        }
+        section {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .about, .portfolio, .contact {
+            margin-bottom: 2rem;
+        }
+        .about h2, .portfolio h2, .contact h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .portfolio .project {
+            display: flex;
+            margin-bottom: 1rem;
+        }
+        .portfolio img {
+            max-width: 150px;
+            margin-right: 1rem;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        footer a {
+            color: #57a8f0;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Your Name</h1>
+    <p>Web Developer | Designer | Creator</p>
+</header>
+
+<section class="about">
+    <h2>About Me</h2>
+    <p>Welcome to my portfolio! I am a passionate web developer with expertise in creating stunning and functional websites. I love turning ideas into reality through code.</p>
+</section>
+
+<section class="portfolio">
+    <h2>Portfolio</h2>
+    <div class="project">
+        <img src="https://via.placeholder.com/150" alt="Project Image">
+        <div>
+            <h3>Project Title</h3>
+            <p>Description of the project goes here. It explains what the project is about, technologies used, and your role.</p>
+        </div>
+    </div>
+    <div class="project">
+        <img src="https://via.placeholder.com/150" alt="Project Image">
+        <div>
+            <h3>Another Project</h3>
+            <p>Description of this project. Highlight any unique challenges and solutions.</p>
+        </div>
+    </div>
+</section>
+
+<section class="contact">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out through the form below or connect with me on social media!</p>
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 Your Name. All rights reserved. | <a href="#">LinkedIn</a> | <a href="#">GitHub</a></p>
+</footer>
+
+</body>
+</html>

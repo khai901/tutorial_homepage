@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Javascripts</title>
+</head>
+<body>
+
+	<iframe src="https://free.timeanddate.com/clock/i9ofg0vx/n122/tt0" frameborder="0" width="340" height="18"></iframe>
+
+
+	<h2>Javascript help change the content</h2>
+	<p id="content">using Javascript to change the content</p>
+	<button type="button" onclick='document.getElementById("content").innerHTML = "Hello Javascript!"'>Change the Content</button>
+
+	<h2>Javascript help to change the style</h2>
+	<p id="style1">I am using javascripts to change the style of my content</p>
+
+	<script>
+		function myStyle()
+		{
+			document.getElementById("style1").style.
+				fontSize="45px";
+
+			document.getElementById("style1").style.
+				fontFamily="Papyrus";
+
+			document.getElementById("style1").style.
+				color="blue";
+
+			document.getElementById("style1").style.
+				backgroundColor="yellow";
+		}
+	</script>
+
+	<button type="button" onclick="myStyle()">Click Here!</button>
+
+	<h2>Javascript change the attribute @ image manipulations</h2>
+
+	<script>
+		function face(a)
+		{
+			var picture; 
+			if (a==0)
+			{
+				picture="image/happyface.jpg"
+			}
+			else
+			{
+				picture="image/unhappy.jpg"
+			}
+			document.getElementById('gambar').src=picture;
+		}
+	</script>
+
+	<img src="image/happyface.jpg" id="gambar" width="100" height="200">
+
+	<p>
+		<button type="button" onclick="face(4)">unhappy</button>
+		<button type="button" onclick="face(0)">happy</button>
+	</p>
+
+	<h2>popup window: Alert Box</h2>
+
+	<button onclick="myAlertBox()">Click Here</button>
+
+	<script>
+		function myAlertBox()
+		{
+			alert("Assalamualaikum. \n Welcome to my page.")
+		}
+	</script>
+
+	<script>
+		{
+			alert("Assalamualaikum. \n Welcome to my page.")
+		}
+	</script>
+
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.694735770353!2d102.26888536967394!3d5.7570029188598815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31b68fe6f50d123f%3A0xaeb67217536d6442!2sUiTM%20Machang!5e0!3m2!1sen!2smy!4v1734227318901!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</body>
+</html>
